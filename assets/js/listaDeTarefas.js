@@ -1,4 +1,4 @@
-const criarTarefa = (evento) => {
+( () =>{const criarTarefa = (evento) => {
     
     evento.preventDefault()
     const input = document.querySelector('[data-form-input]')
@@ -38,3 +38,4 @@ const concluirTarefa = (evento) => {
     const tarefaCompleta = botaoConclui.parentElement
     tarefaCompleta.classList.toggle('done')
 }
+})()
